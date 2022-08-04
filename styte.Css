@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Mouse+Memoirs&family=Oswald&family=Press+Start+2P&family=Russo+One&family=Shrikhand&family=Teko&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.nav{
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index:100;
+}
+
+.nav ul{
+    list-style : none;
+    padding:0;
+    margin:0;
+}
+.nav ul li {
+    display: inline-block;
+}
+.nav ul li a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px; 
+    border-radius: 10px;
+    font-family: Century Gothic;
+    font-weight: bold;
+}
+.nav ul li a:hover{
+    color: rgb(240, 33, 33);
+
+}
+.dropdown_menu:hover .dropdown{
+    display: block;
+
+}
+.dropdown{
+    width: 200px;
+    position: absolute;
+    background-color: rgb(32, 30, 30);
+    display: none;
+}
+.dropdown ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.dropdown ul li{
+    width: 100%;
+}
+.dropdown ul li a{
+    display:block;
+    font-size: 16px !important;
+}
+.download{
+    color: ghostwhite !important;
+    background-color: rgb(177, 7, 7) !important;
+    padding:8px !important;
+    margin-right: 15px;
+    
+}
+.background {
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    z-index: -1;
+}
+.background img {
+    width: 100%;
+    height: 100%;
+
+}
+.eykorban{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    bottom: -65%;
+}
+.eykorban img{
+    width: 100%;
+    height: 100%;
+}
+.image{
+    width: 100%;
+    height: 35%;
+    position: absolute;
+    top:33%;
+    transform:translateY(-30%);
+    left:50%;
+    transform:translateX(-50%) ;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+
+.write{
+    width: 100%;
+    position: absolute;
+    top:70%;
+    transform:translateY(-70%);
+    left:50%;
+    transform:translateX(-50%) ;
+    text-align: center;
+}
+.write p{
+    font-size: 30px;
+    color: white;
+}
+
+.images{
+    height: 70px;
+    position: absolute;
+    top:75%;
+    transform:translateY(-75%);
+    left:50%;
+    transform:translateX(-50%);
+    overflow: hidden;
+}
+.images img{
+    width: 200px;
+    height: 100%;
+    transition: transform 0.3s ; 
+
+}
+.images img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.writed{
+    width: 100%;
+    position: absolute;
+    bottom:5%;
+    transform:translateY(-70%);
+    left:50%;
+    transform:translateX(-50%) ;
+    text-align: center;
+}
+.writed p{
+    font-size: 50px;
+    color: white;
+}    
+
+.writee{
+    width: 100%;
+    position: absolute;
+    bottom:0.5%;
+    transform:translateY(-70%);
+    left:50%;
+    transform:translateX(-50%) ;
+    text-align: center;
+}
+.writee p{
+    font-size: 30px;
+    color: white;
+}    
+
+.Season{
+    position: absolute;
+    bottom:-8%;
+    left:50%;
+    transform:translateX(-50%) ;
+    text-align: center;
+    font-size: 20px;
+    color: black;
+    background: white;
+    padding: 18px;
+    text-decoration: none;
+}
+
+iframe {
+    position: absolute;
+    bottom:-60%;
+    left:50%;
+    transform:translateX(-50%) ;
+    width:50%;
+    height:50%;
+    text-decoration: none;
+}
+
+.backgroundpic{
+    width: 100%;
+    position:absolute;
+    top: 100%;
+
+}
+.backgroundpic img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.writing{
+    
+    width: 100%;
+    height:50px;
+    position: absolute;
+    bottom: -72%;
+    transform:translateY(-70%);
+    left:50%;
+    transform:translateX(-50%) ;
+    text-align:center;
+    background-color:white;
+}
+.writing h1{
+    font-size:30px;
+    font-weight:600;
+    color: black;
+  
+}    
+
+.main-card{
+    width: 100%;
+    padding: 10px 0px;
+    position: absolute;
+    bottom:-130%;
+}
+.main-card .title{
+    width: 1300px;
+    margin: auto;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+.main-card .main-box{
+    width: 1300px;
+    margin: auto;
+    display: table;
+    content: "";
+    overflow: hidden;
+}
+.main-card .main-box .box{
+    width: 413px;
+    float: left;
+    margin: 10px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    border-radius:10px;
+    transition: transform 0.3s;
+}
+.main-card .main-box .box:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    transform: scale(1.05);
+}
+.main-card .main-box .box img{
+    width: 100%;
+    height: 250px;
+    border-radius:10px;
+}
+
+.main-card .main-box .box .writedd{
+
+    width: 100%;
+}
+
+.main-card .main-box .box .writedd p{
+
+    font-size: 25px;
+    color: red;
+}
+
+.main-card .main-box .box .writedd h6{
+
+    font-size: 30px;
+    color: black;
+    padding:10px 0px;
+}
+
+.main-card .main-box .box .writedd h5{
+
+    font-size: 22px;
+    color: black;
+}
+
+.writinged{
+    width: 100%;
+    height:50px;
+    position: absolute;
+    bottom:-20%;
+    left:50%;
+    transform:translateX(-50%);
+    text-align:center;
+    background-color:white;
+}
+.writinged h2{
+    font-size:30px;
+    font-weight:600;
+    color: black;
+  
+}  
+
+.writinged{
+    
+    width: 100%;
+    position:absolute;
+    bottom:-50;
+}
+.writinged .picture i{
+    overflow: hidden;
+    transition: transform 0.2s;
+    padding:10px;
+    font-size:75px;
+    color:black;
+    border-left:1px solid black;
+}
+.writinged .picture i:hover{
+    transform: scale(1.1);
+}
+
+
+.picturebackground{
+    width: 100%;
+}
+.picturebackground img{
+    position: absolute;
+    height:100%;
+    width: 100%;
+    bottom:-140%;
+    left: 0%;
+    
+}
+
+    
+    
+
+
+
